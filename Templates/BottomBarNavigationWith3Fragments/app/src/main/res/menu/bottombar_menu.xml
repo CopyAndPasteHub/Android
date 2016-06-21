@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Bottom bar menu by roughike-->
+<!--https://github.com/roughike/BottomBar-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Every item for another tab-->
+    <item
+        android:id="@+id/bottomBarItemOne"
+        android:icon="@drawable/ic_looks_one_black_24dp"
+        android:title="First item" />
+    <item
+        android:id="@+id/bottomBarItemSecond"
+        android:icon="@drawable/ic_looks_two_black_24dp"
+        android:title="Second item" />
+    <item
+        android:id="@+id/bottomBarItemThird"
+        android:icon="@drawable/ic_looks_3_black_24dp"
+        android:title="Third item" />
+</menu>
+<!--Steps-->
+<!--1. To add new tab paste new item block-->
+<!--2. Change android:id-->
+<!--3. Change android:icon (must add icon to drawable)-->
+<!--4. Change android:title-->
+
+<!--Visit copyandpaste.website-->
+<!--Template made by Paweł Marcinkiewicz-->
