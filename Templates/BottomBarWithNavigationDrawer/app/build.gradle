@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "website.copyandpaste.bottombarnavigationwith3fragments"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    //    https://github.com/ncapdevi/FragNav
+    //    Library for managing multiple stacks of fragments
+    //    https://github.com/roughike/BottomBar
+    //    Material design bottom navigation
+    //    https://github.com/mikepenz/MaterialDrawer
+    //    Navigation Drawer
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.ncapdevi:frag-nav:1.0.3'
+    compile 'com.roughike:bottom-bar:1.3.9'
+    compile('com.mikepenz:materialdrawer:5.3.1@aar') {
+        transitive = true
+    }
+    compile 'com.android.support:support-v4:23.4.0'
+}
